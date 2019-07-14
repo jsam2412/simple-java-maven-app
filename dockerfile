@@ -10,10 +10,3 @@ COPY . .
 # Build java application with maven
 RUN mvn -B -DskipTests clean packagerun
  
- 
-# Expose container port number 8084
-# Application will run on this port number
-#EXPOSE 8084
-
-# Entry point of container i.e. command which will start/run our application
-#CMD [ "java", "-jar target/my-app-1.0-SNAPSHOT.jar" ]
